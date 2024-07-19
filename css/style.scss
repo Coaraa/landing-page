@@ -125,7 +125,7 @@
             }
         }
 
-        .contentContainer {
+        .container {
             height: fit-content;
             display: flex;
 
@@ -169,7 +169,7 @@
                     }
 
                     // TODO: Add a font weight
-                    .arrowRight{
+                    .arrowRight {
                         position: absolute;
                         top: 50%;
                         right: 1%;
@@ -178,10 +178,11 @@
                         font-weight: 200;
                     }
 
-                    .arrowLeft:hover, .arrowRight:hover {
+                    .arrowLeft:hover,
+                    .arrowRight:hover {
                         cursor: pointer;
                     }
-                    
+
                 }
 
                 .textContainer {
@@ -214,8 +215,185 @@
             .formContainer {
                 width: 30%;
                 background-color: var(--blue);
-            }
+                height: fit-content;
+                min-height: calc(100vh - 7rem);
 
+                form {
+                    width: 100%;
+                    height: fit-content;
+
+                    // TODO: Add a font weight
+                    .title {
+                        font-size: 1.3rem;
+                        font-weight: 600;
+                        text-align: center;
+                        padding: 1rem;
+                        margin-top: 1rem;
+                        color: white;
+                        text-transform: uppercase;
+                        width: 100%;
+                        height: fit-content;
+                    }
+
+                    .fields {
+                        width: 100%;
+                        padding: 2rem;
+                        
+
+                        input {
+                            margin-bottom: 0.7rem;
+                            width: 100%;
+                            padding: 0.5rem;
+                            border: none;
+                            border-bottom: 1px solid white;
+                            background-color: transparent;
+                            font-size: 1rem;
+                            color: var(--turquoise);
+
+                            &::placeholder {
+                                color: var(--turquoise);
+                                font-style: italic;
+                            }
+
+                        }
+
+                        input:focus {
+                            outline: none;
+                        }
+                    }
+
+                    .radioBoxes {
+                        padding: 0 2rem 0.5rem;
+                        color: white;
+
+
+                        .radioBox {
+                            display: inline-block;
+                            position: relative;
+                            padding: 0 6px;
+                            margin: 10px 0 0;
+
+                            input[type='radio'] {
+                                display: none;
+                            }
+
+                            label:before {
+                                content: " ";
+                                display: inline-block;
+                                position: relative;
+                                top: 2px;
+                                margin: 0 5px 0 0;
+                                width: 16px;
+                                height: 16px;
+                                border-radius: 11px;
+                                border: 1px solid white;
+                                background-color: transparent;
+                            }
+
+
+                            input[type=radio]:checked+label:after {
+                                content: " ";
+                                display: block;
+                                border-radius: 11px;
+                                width: 10px;
+                                height: 10px;
+                                position: absolute;
+                                top: 6px;
+                                left: 10px;
+                                background: white;
+                            }
+
+                        }
+
+                    }
+
+                    .contact {
+                        width: 100%;
+                        padding-left: 2rem;
+                        font-size: 1rem;
+                    }
+
+                    .checkBox {
+                        height: fit-content;
+                        padding: 0.5rem 2rem 0;
+
+                        .checkboxContainer {
+                            display: flex;
+                            flex-direction: row;
+
+                            .text {
+                                color: var(--turquoise);
+                                font-size: 0.7rem;
+                                padding: 0 0 0 5px;
+                            }
+
+                            input[type='checkbox'] {
+                                display: none;
+                            }
+
+                            label {
+                                position: relative;
+                            }
+
+                            label:before {
+                                content: " ";
+                                display: inline-block;
+                                position: relative;
+                                top: 2px;
+                                margin: 0 5px 0 0;
+                                width: 16px;
+                                height: 16px;
+                                border: 1px solid white;
+                                background-color: transparent;
+                            }
+
+
+                            input[type=checkbox]:checked+label:after {
+                                content: " ";
+                                display: inline-block;
+                                position: absolute;
+                                top: 5px;
+                                left: 3px;
+                                margin: 0 5px 0 0;
+                                width: 10px;
+                                height: 10px;
+                                border: 1px solid white;
+                                background-color: white;
+                            }
+
+                        }
+                    }
+
+                    .formSubmit {
+                        width: 100%;
+                        padding: 3rem;
+                        text-align: center;
+
+                        input {
+                            width: 100%;
+                            padding: 1rem;
+                            border: none;
+                            background-color: white;
+                            color: var(--turquoise);
+                            font-size: 1rem;
+                            text-transform: uppercase;
+                            font-weight: 600;
+                        }
+
+                        input:hover {
+                            cursor: pointer;
+                        }
+                    }
+
+                    .nbText {
+                        font-size: 0.5rem;
+                        text-align: center;
+                        width: 100%;
+                        margin-bottom: 1rem;
+                    }
+                }
+
+            }
         }
     }
 }
