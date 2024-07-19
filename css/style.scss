@@ -1,0 +1,57 @@
+:root {
+    --blue: #78b7d7;
+    --light-blue: #94b7c2;
+    --turquoise: #006070;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    header {
+        width: 100%;
+        height: 5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 2rem auto;
+
+        .title {
+            flex: 4;
+            color: var(--turquoise);
+            text-transform: uppercase;
+
+            .mainTitle {
+                font-size: 2rem;
+                font-weight: bold;
+                margin-bottom: 0.5rem;
+            }
+
+            .subTitle {
+                font-size: 2rem;
+            }
+        }
+
+        .svgLogoLeft {
+            flex: 1;
+            height: 100%;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .svgLogoRight {
+            flex: 1;
+            width: 5rem;
+            height: 100%;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
