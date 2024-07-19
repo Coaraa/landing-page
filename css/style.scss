@@ -4,54 +4,218 @@
     --turquoise: #006070;
 }
 
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('Montserrat-Thin.ttf');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('Montserrat-ExtraLight.ttf');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('Montserrat-Light.ttf');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('Montserrat-Regular.ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('Montserrat-Medium.ttf');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('Montserrat-SemiBold.ttf');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('Montserrat-Bold.ttf');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('Montserrat-ExtraBold.ttf');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('Montserrat-Black.ttf');
+    font-weight: 900;
+    font-style: normal;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
 
-    header {
-        height: 5rem;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin: 1rem 3%;
+    section {
+        color: var(--turquoise);
+        height: 100vh;
 
-        .title {
-            color: var(--turquoise);
-            text-transform: uppercase;
-            width: 70%;
-            padding-left: 1rem;
-            font-size: 1.5rem;
+        header {
+            height: 7rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0 3%;
+            padding: 1rem 0;
 
-            .mainTitle {
-                font-size: 2rem;
-                font-weight: bold;
-                margin-bottom: 0.5rem;
+            .title {
+                text-transform: uppercase;
+                width: 70%;
+                padding-left: 1rem;
+                font-size: 1.5rem;
+
+                // TODO:  Add a font weight
+                .mainTitle {
+                    font-size: 2rem;
+                    font-weight: 400;
+                    margin-bottom: 0.5rem;
+                }
+
+                .subTitle {
+                    font-size: 2rem;
+                }
             }
 
-            .subTitle {
-                font-size: 2rem;
+            .svgLogoLeft {
+                width: 15%;
+                height: 100%;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            .svgLogoRight {
+                width: 15%;
+                height: 100%;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
             }
         }
 
-        .svgLogoLeft {
-            width: 15%;
-            height: 100%;
+        .contentContainer {
+            height: fit-content;
+            display: flex;
 
-            img {
-                width: 100%;
-                height: 100%;
+            .descriptionContainer {
+                width: 70%;
+                height: fit-content;
+                min-height: calc(100vh - 7rem);
+
+                .carouselContainer {
+                    background-image: url('/assets/2021-01-08-chalets-monetier-sans-logo.jpg');
+                    background-size: cover;
+                    background-position: center;
+                    height: 50vh;
+                    position: relative;
+
+                    .textImage {
+                        background-color: rgba(0, 96, 112, 0.9);
+                        height: fit-content;
+                        width: fit-content;
+                        padding: 1.5rem;
+                        position: absolute;
+                        top: 5%;
+
+                        // TODO: Add a font weight
+                        p {
+                            font-size: 1.2rem;
+                            color: white;
+                            text-transform: uppercase;
+                            font-weight: 600;
+                        }
+                    }
+
+                    // TODO: Add a font weight
+                    .arrowLeft {
+                        position: absolute;
+                        top: 50%;
+                        left: 1%;
+                        font-size: 4rem;
+                        color: white;
+                        font-weight: 200;
+                    }
+
+                    // TODO: Add a font weight
+                    .arrowRight{
+                        position: absolute;
+                        top: 50%;
+                        right: 1%;
+                        font-size: 4rem;
+                        color: white;
+                        font-weight: 200;
+                    }
+
+                    .arrowLeft:hover, .arrowRight:hover {
+                        cursor: pointer;
+                    }
+                    
+                }
+
+                .textContainer {
+                    padding: 2rem;
+                    height: fit-content;
+
+                    // TODO: Add a font weight
+                    .title {
+                        font-size: 1.5rem;
+                        font-weight: 600;
+                        text-transform: uppercase;
+                    }
+
+                    // TODO: Add a font weight
+                    .subtitle {
+                        font-size: 1.5rem;
+                        font-weight: 500;
+                        text-transform: uppercase;
+                        color: var(--light-blue);
+                    }
+
+                    .text {
+                        font-family: 'Montserrat', sans-serif;
+                        font-size: 0.9rem;
+                        margin: 1rem;
+                    }
+                }
             }
-        }
 
-        .svgLogoRight {
-            width: 15%;
-            height: 100%;
-
-            img {
-                width: 100%;
-                height: 100%;
+            .formContainer {
+                width: 30%;
+                background-color: var(--blue);
             }
+
         }
     }
 }

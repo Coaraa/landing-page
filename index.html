@@ -9,85 +9,99 @@
 </head>
 
 <body>
-    <header>
-        <div class="svgLogoLeft">
-            <img src="/assets/logo-coeur.svg" alt="Logo coeur des écrins">
-        </div>
-        <div class="title">
-            <h1 class="mainTitle">Nouveau à monêtier-les-bains</h1>
-            <div class="subTitle">Appartements neufs du 2 au 4 pièces duplex</div>
-        </div>
-        <div class="svgLogoRight">
-            <img src="/assets/logo-sully.svg" alt="Logo sully immobilier">
-        </div>
+    <section>
+        <header>
+            <div class="svgLogoLeft">
+                <img src="/assets/logo-coeur.svg" alt="Logo coeur des écrins">
+            </div>
+            <div class="title">
+                <h1 class="mainTitle">Nouveau à monêtier-les-bains</h1>
+                <div class="subTitle">Appartements neufs du 2 au 4 pièces duplex</div>
+            </div>
+            <div class="svgLogoRight">
+                <img src="/assets/logo-sully.svg" alt="Logo sully immobilier">
+            </div>
 
-    </header>
+        </header>
 
-    <div class="descriptionContainer">
-        <div class="carouselContainer">
-            <div class="textImage"></div>
-            <div class="arrow">&lt;</div>
-            <div class="arrow">&gt;</div>
+        <div class="contentContainer">
+
+            <div class="descriptionContainer">
+                <div class="carouselContainer">
+                    <div class="textImage">
+                        <p>Idéal pour Investir</p>
+                        <p>Ou habiter au pied des pistes</p>
+                    </div>
+                    <div class="arrowLeft">&lt;</div>
+                    <div class="arrowRight">&gt;</div>
+                </div>
+                <div class="textContainer">
+                    <div class="title">Une adresse montagnarde moderne dans un village authentique</div>
+                    <div class="subtitle">au cœur des Hautes-Alpes</div>
+                    <div class="text">
+                        <ul>
+                            <li>Généreux balcons et terrasses offrant des <b>vues exceptionnelles sur le massif des Écrins</b>,
+                            </li>
+                            <li><b>Commerces et services de proximité</b> dans un rayon de 10 min* à pied,</li>
+                            <li> Espaces végétalisés communs et <b>prestations de qualité pour un confort au quotidien</b>,
+                            </li>
+                            <li><b>Navette au pied de la résidence</b> pour rejoindre la Vallée de Briançon et Serre Chevalier,
+                            </li>
+                            <li>Résidence aux portes de la frontière italienne, moins de 30 km* et <b>gare SNCF de Briançon à 20 min* en voiture</b>.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="formContainer">
+                <div class="title">Contactez-nous dès maintenant !</div>
+                <form action="/index.php" method="post">
+                    <div class="formElement">
+                        <label for="name">Nom*</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="formElement">
+                        <label for="firstname">Prénom*</label>
+                        <input type="text" id="firstname" name="firstname" required>
+                    </div>
+                    <div class="formElement">
+                        <label for="email">Email*</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="formElement">
+                        <label for="phone">Téléphone*</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="formElement">
+                        <label for="code">Code postal*</label>
+                        <input type="text" id="code" name="code" required>
+                    </div>
+                    <div class="radioBox">
+                        <label for="type">Vous souhaitez*</label>
+                        <input type="radio" id="type1" name="type" value="Habiter" required>
+                        <label for="type1">Habiter</label>
+                        <input type="radio" id="type2" name="type" value="Investir" required>
+                        <label for="type2">Investir</label>
+                    </div>
+                    <div class="contact"> Gardons le contact !</div>
+                    <div class="checkBox">
+                        <input type="checkbox" id="cgu" name="cgu" required>
+                        <label for="cgu">J'autorise Sully Immobilier à traiter mes donnés personnelles dans le cadre de
+                            ma
+                            demande d'information, et de la relation commerciale qui pourrait en découler. J'ai
+                            cependant la
+                            possibilité de retirer à tout moment mon consentement dans la base Sully Immobilier.</label>
+                    </div>
+                    <div class="formElement">
+                        <input type="submit" value="Envoyer ma demande">
+                    </div>
+                </form>
+                <div class="nbText">*Source Google Maps -Mentions légales - Politique de Confidentialité - Conception :
+                    Adjectif</div>
+            </div>
+
         </div>
-        <div class="textContainer">
-            <div class="title">Une adresse montagnarde moderne dans un village authentique</div>
-            <div class="subtitle">au cœur des Hautes-Alpes</div>
-            <div class="text">
-                <ul>
-                    <li>Généreux balcons et terrasses offrant des vues exceptionnelles sur le massif des Écrins,</li>
-                    <li>Commerces et services de proximité dans un rayon de 10 min* à pied,</li>
-                    <li> Espaces végétalisés communs et prestations de qualité pour un confort au quotidien,</li>
-                    <li>Navette au pied de la résidence pour rejoindre la Vallée de Briançon et Serre Chevalier,</li>
-                    <li>Résidence aux portes de la frontière italienne, moins de 30 km* et gare SNCF de Briançon à 20
-                        min* en voiture.</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-
-    <div class="formContainer">
-        <div class="title">Contactez-nous dès maintenant !</div>
-        <form action="/index.php" method="post">
-            <div class="formElement">
-                <label for="name">Nom*</label>
-                <input type="text" id="name" name="name" required>
-            </div>
-            <div class="formElement">
-                <label for="firstname">Prénom*</label>
-                <input type="text" id="firstname" name="firstname" required>
-            </div>
-            <div class="formElement">
-                <label for="email">Email*</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <div class="formElement">
-                <label for="phone">Téléphone*</label>
-                <input type="tel" id="phone" name="phone" required>
-            </div>
-            <div class="formElement">
-                <label for="code">Code postal*</label>
-                <input type="text" id="code" name="code" required>
-            </div>
-            <div class="radioBox">
-                <label for="type">Vous souhaitez*</label>
-                <input type="radio" id="type1" name="type" value="Habiter" required>
-                <label for="type1">Habiter</label>
-                <input type="radio" id="type2" name="type" value="Investir" required>
-                <label for="type2">Investir</label>
-            </div>
-            <div class="contact"> Gardons le contact !</div>
-            <div class="checkBox">
-                <input type="checkbox" id="cgu" name="cgu" required>
-                <label for="cgu">J'autorise Sully Immobilier à traiter mes donnés personnelles dans le cadre de ma demande d'information, et de la relation commerciale qui pourrait en découler. J'ai cependant la possibilité de retirer à tout moment mon consentement dans la base Sully Immobilier.</label>
-            </div>
-            <div class="formElement">
-                <input type="submit" value="Envoyer ma demande">
-            </div>
-        </form>
-        <div class="grayRectangle"></div>
-    </div>
-
-
+    </section>
 </body>
 
 </html>
