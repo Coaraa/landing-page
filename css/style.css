@@ -89,6 +89,8 @@
         * section header .svgLogoLeft img {
           width: 100%;
           height: 100%; }
+        * section header .svgLogoLeft .logoSully {
+          display: none; }
       * section header .svgLogoRight {
         width: 15%;
         height: 100%; }
@@ -301,3 +303,111 @@
             text-align: center;
             width: 100%;
             margin-bottom: 1rem; }
+
+@media screen and (max-width: 768px) {
+  section header {
+    display: block;
+    height: 15rem;
+    justify-content: normal;
+    gap: 1rem; }
+    section header .svgLogoLeft {
+      height: 5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      padding: 1rem; }
+      section header .svgLogoLeft img {
+        padding: 0.1rem; }
+      section header .svgLogoLeft .logoSully {
+        display: block; }
+    section header .title {
+      width: 100%;
+      text-align: center; }
+      section header .title .mainTitle {
+        font-size: 1.5rem; }
+      section header .title .subTitle {
+        font-size: 1rem; }
+    section header .svgLogoRight {
+      display: none; }
+  section .container {
+    flex-direction: column; }
+    section .container .descriptionContainer {
+      width: 100%;
+      height: fit-content; }
+      section .container .descriptionContainer .carouselContainer {
+        margin: 5% 0; }
+        section .container .descriptionContainer .carouselContainer .textImage {
+          top: 10%; }
+      section .container .descriptionContainer .textContainer {
+        padding: 1.5rem; }
+    section .container .formContainer {
+      width: 100%;
+      height: fit-content;
+      min-height: auto; }
+      section .container .formContainer form .title {
+        padding: 0.5rem; }
+      section .container .formContainer form .fields {
+        padding: 1rem; }
+        section .container .formContainer form .fields .field {
+          padding: 0.5rem; }
+        section .container .formContainer form .fields .radioBoxes {
+          padding: 0 1rem 0.5rem; }
+        section .container .formContainer form .fields .contact {
+          padding-left: 1rem; }
+        section .container .formContainer form .fields .checkBox {
+          padding: 0.5rem 1rem 0; }
+        section .container .formContainer form .fields .formSubmit {
+          padding: 1rem; } }
+
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+  section header {
+    justify-content: normal;
+    gap: 1rem; }
+    section header .svgLogoLeft {
+      height: fit-content;
+      width: 9%; }
+      section header .svgLogoLeft img {
+        padding: 0.1rem; }
+      section header .svgLogoLeft .logoSully {
+        display: block; }
+    section header .title {
+      width: 90%; }
+      section header .title .mainTitle {
+        font-size: 2rem; }
+    section header .svgLogoRight {
+      display: none; }
+  section .container {
+    flex-direction: column; }
+    section .container .descriptionContainer {
+      width: 100%;
+      height: fit-content;
+      min-height: auto; }
+      section .container .descriptionContainer .carouselContainer {
+        margin: 5% 0; }
+        section .container .descriptionContainer .carouselContainer .textImage {
+          top: 10%; }
+      section .container .descriptionContainer .textContainer {
+        padding: 1.5rem; }
+    section .container .formContainer {
+      width: 100%;
+      height: fit-content;
+      min-height: auto; }
+      section .container .formContainer form .title {
+        padding: 0.5rem; }
+      section .container .formContainer form .fields {
+        padding: 1rem; }
+        section .container .formContainer form .fields .field {
+          padding: 0.5rem; }
+        section .container .formContainer form .fields .radioBoxes {
+          padding: 0 1rem 0.5rem; }
+        section .container .formContainer form .fields .contact {
+          padding-left: 1rem; }
+        section .container .formContainer form .fields .checkBox {
+          padding: 0.5rem 1rem 0; }
+        section .container .formContainer form .fields .formSubmit {
+          padding: 1rem; } }
+
+@media screen and (max-width: 1300px) {
+  section header .title .subTitle {
+    font-size: 1.5rem; } }
