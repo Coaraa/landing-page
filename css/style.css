@@ -5,55 +5,55 @@
 
 @font-face {
   font-family: 'Montserrat';
-  src: url("Montserrat-Thin.ttf");
+  src: url("../fonts/Montserrat-Thin.ttf");
   font-weight: 100;
   font-style: normal; }
 
 @font-face {
   font-family: 'Montserrat';
-  src: url("Montserrat-ExtraLight.ttf");
+  src: url("../fonts/Montserrat-ExtraLight.ttf");
   font-weight: 200;
   font-style: normal; }
 
 @font-face {
   font-family: 'Montserrat';
-  src: url("Montserrat-Light.ttf");
+  src: url("../fonts/Montserrat-Light.ttf");
   font-weight: 300;
   font-style: normal; }
 
 @font-face {
   font-family: 'Montserrat';
-  src: url("Montserrat-Regular.ttf");
+  src: url("../fonts/Montserrat-Regular.ttf");
   font-weight: 400;
   font-style: normal; }
 
 @font-face {
   font-family: 'Montserrat';
-  src: url("Montserrat-Medium.ttf");
+  src: url("../fonts/Montserrat-Medium.ttf");
   font-weight: 500;
   font-style: normal; }
 
 @font-face {
   font-family: 'Montserrat';
-  src: url("Montserrat-SemiBold.ttf");
+  src: url("../fonts/Montserrat-SemiBold.ttf");
   font-weight: 600;
   font-style: normal; }
 
 @font-face {
   font-family: 'Montserrat';
-  src: url("Montserrat-Bold.ttf");
+  src: url("../fonts/Montserrat-Bold.ttf");
   font-weight: 700;
   font-style: normal; }
 
 @font-face {
   font-family: 'Montserrat';
-  src: url("Montserrat-ExtraBold.ttf");
+  src: url("../fonts/Montserrat-ExtraBold.ttf");
   font-weight: 800;
   font-style: normal; }
 
 @font-face {
   font-family: 'Montserrat';
-  src: url("Montserrat-Black.ttf");
+  src: url("../fonts/Montserrat-Black.ttf");
   font-weight: 900;
   font-style: normal; }
 
@@ -103,7 +103,7 @@
         height: fit-content;
         min-height: calc(100vh - 7rem); }
         * section .container .descriptionContainer .carouselContainer {
-          background-image: url("/assets/2021-01-08-chalets-monetier-sans-logo.jpg");
+          background-image: url("../assets/2021-01-08-chalets-monetier-sans-logo.jpg");
           background-size: cover;
           background-position: center;
           height: 50vh;
@@ -174,7 +174,7 @@
           * section .container .formContainer form .fields {
             width: 100%;
             padding: 2rem; }
-            * section .container .formContainer form .fields input {
+            * section .container .formContainer form .fields .field {
               margin-bottom: 0.7rem;
               width: 100%;
               padding: 0.5rem;
@@ -183,11 +183,20 @@
               background-color: transparent;
               font-size: 1rem;
               color: var(--turquoise); }
-              * section .container .formContainer form .fields input::placeholder {
+              * section .container .formContainer form .fields .field::placeholder {
                 color: var(--turquoise);
                 font-style: italic; }
-            * section .container .formContainer form .fields input:focus {
+            * section .container .formContainer form .fields .field:focus {
               outline: none; }
+            * section .container .formContainer form .fields .field.error {
+              border-bottom: 1px solid #ce3030; }
+            * section .container .formContainer form .fields .item.error .error-txt {
+              display: block; }
+            * section .container .formContainer form .fields .error-txt {
+              display: none;
+              color: #ce3030;
+              font-size: 0.8rem;
+              margin: -0.2rem 0 0.5rem; }
           * section .container .formContainer form .radioBoxes {
             padding: 0 2rem 0.5rem;
             color: white; }
@@ -219,6 +228,13 @@
                 top: 6px;
                 left: 10px;
                 background: white; }
+            * section .container .formContainer form .radioBoxes .error-txt {
+              display: none;
+              color: #ce3030;
+              font-size: 0.8rem;
+              margin: 0.5rem 0 0.2rem; }
+          * section .container .formContainer form .radioBoxes.error .error-txt {
+            display: block; }
           * section .container .formContainer form .contact {
             width: 100%;
             padding-left: 2rem;
@@ -258,11 +274,18 @@
                 height: 10px;
                 border: 1px solid white;
                 background-color: white; }
+            * section .container .formContainer form .checkBox .error-txt {
+              display: none;
+              color: #ce3030;
+              font-size: 0.8rem;
+              margin: 0.4rem 0 0.2rem; }
+          * section .container .formContainer form .checkBox.error .error-txt {
+            display: block; }
           * section .container .formContainer form .formSubmit {
             width: 100%;
             padding: 3rem;
             text-align: center; }
-            * section .container .formContainer form .formSubmit input {
+            * section .container .formContainer form .formSubmit button {
               width: 100%;
               padding: 1rem;
               border: none;
@@ -271,7 +294,7 @@
               font-size: 1rem;
               text-transform: uppercase;
               font-weight: 600; }
-            * section .container .formContainer form .formSubmit input:hover {
+            * section .container .formContainer form .formSubmit button:hover {
               cursor: pointer; }
           * section .container .formContainer form .nbText {
             font-size: 0.5rem;
